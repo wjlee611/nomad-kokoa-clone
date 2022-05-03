@@ -38,3 +38,22 @@
   font-size: 32px;
   color: white;
 }
+
+@keyframes bounceIcon {
+  0% {
+    transform: none;
+  }
+  33% {
+    transform: scaleY(80%) scaleX(120%) translateY(2px);
+  }
+  67% {
+    transform: scaleY(120%) scaleX(90%) translateY(-2px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.more-screen .user-component__subtitle i {
+  animation: bounceIcon 1.5s ease-in-out infinite;
+}
